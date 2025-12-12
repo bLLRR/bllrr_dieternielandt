@@ -1,17 +1,4 @@
-export interface Project {
-  name: string;
-  description: string;
-  projectIcon?: {
-    name: string;
-    color?: string;
-  };
-  technologies?: Technology[];
-}
-
-export interface Technology {
-  icon: string;
-  name?: string;
-}
+import { Project } from '@/types/Project';
 
 export const projects: Project[] = [
   {
@@ -29,7 +16,7 @@ export const projects: Project[] = [
   {
     name: 'Fleet management',
     description:
-      'Platform voor wagenparkbeheer met modules, automasche herinneringen en integraies',
+      'Platform voor wagenparkbeheer met modules, automatische herinneringen en integraties',
     projectIcon: {
       name: 'bi bi-box',
     },
@@ -64,7 +51,7 @@ export const projects: Project[] = [
   },
   {
     name: 'ERP API-Gateway/mapper',
-    description: 'Servicemappinglaag voor API-communicaie',
+    description: 'Servicemappinglaag voor API-communicatie',
     projectIcon: {
       name: 'bi bi-box',
     },
