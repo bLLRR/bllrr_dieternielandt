@@ -1,11 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Project } from '@/types/Project';
+import { Technology } from '@/types/Technology';
+
 import clsx from 'clsx';
 
 import TechIcon from './components/ui/TechIcon';
 import techStack from '@/data/tech-stack.json';
-import { projects, type Project, type Technology } from '@/data/projects';
+import { projects } from '@/data/projects';
 
 interface ProjectProps {
   project: Project;
