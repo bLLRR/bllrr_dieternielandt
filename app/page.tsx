@@ -5,7 +5,7 @@ import { techStack } from '@/data/tech-stack';
 import { projects } from '@/data/projects';
 
 import ProjectCard from './components/project/ProjectCard';
-import TechPill from './components/ui/TechPill.tsx';
+import TechPill from './components/ui/TechPill';
 import Link from './components/ui/Link';
 
 function renderTechStack() {
