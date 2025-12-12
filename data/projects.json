@@ -1,0 +1,23 @@
+[
+  {
+    "name": "dieternielandt.be",
+    "description": "porfolio website",
+    "projectIcon": {
+      "name": "bi bi-browser-chrome"
+    },
+    "technologies": [
+      { "icon": "nextjs2", "name": "NextJS" },
+      { "icon": "tailwindcss", "name": "Tailwindcss" },
+      { "icon": "typescript", "name": "Typescript" }
+    ]
+  },
+  {
+    "name": "c-supply.be",
+    "description": "webshop gekoppeld met ERP (fg-software/Optedo)",
+    "projectIcon": { "name": "bi bi-bag", "color": "red" },
+    "technologies": [
+      { "icon": "laravel", "name": "Laravel" },
+      { "icon": "mysql", "name": "MySQL" }
+    ]
+  }
+]
