@@ -8,4 +8,5 @@ export interface Project {
     color?: string;
   };
   technologies?: Technology[];
+  link?: string;
 }
