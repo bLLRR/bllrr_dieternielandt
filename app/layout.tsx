@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import Navbar from './components/layout/navbar';
 import './globals.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import DynamicFavicon from './components/DynamicFavicon';
@@ -18,7 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white font-sans antialiased dark:bg-gray-900">
         <DynamicFavicon />
-        {children}
+        <Navbar />
+        <main className="mx-auto h-auto max-w-5xl p-4">{children}</main>
       </body>
     </html>
   );
