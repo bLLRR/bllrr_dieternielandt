@@ -78,10 +78,63 @@ export const projects: Project[] = [
   {
     name: 'c-supply.be',
     description: 'webshop gekoppeld met ERP (fg-software/Optedo)',
-    projectIcon: { name: 'bi bi-bag', color: 'red' },
+    projectIcon: {
+      name: 'bi bi-bag',
+      color: 'red',
+    },
     technologies: [
+      { icon: 'php', name: 'PHP' },
+      { icon: 'laravel', name: 'Laravel' },
+      { icon: 'livewire', name: 'Livewire' },
+      { icon: 'mysql', name: 'MySQL' },
+      { icon: 'sendgrid', name: 'Sendgrid' },
+    ],
+  },
+  {
+    name: 'Fleet bestelapplicatie',
+    description:
+      'Bestellen van bestelwagens door verschillende afdelingen binnen de groep. Verwerking door fleetmanager via tool en mail.',
+    projectIcon: {
+      name: 'bi bi-box',
+      color: 'red',
+    },
+    technologies: [
+      { icon: 'php', name: 'PHP' },
+      { icon: 'laravel', name: 'Laravel' },
+      { icon: 'livewire', name: 'Livewire' },
+      { icon: 'mysql', name: 'MySQL' },
+      { icon: 'sendgrid', name: 'Sendgrid' },
+      { icon: 'deployer', name: 'Deployer' },
+    ],
+  },
+  {
+    name: 'Interne webshop',
+    description:
+      'Tool voor werfbestellingen met ERP-integratie (FG-Software/Optedo)',
+    projectIcon: {
+      name: 'bi bi-box',
+    },
+    technologies: [
+      { icon: 'php', name: 'PHP' },
+      { icon: 'laravel', name: 'Laravel' },
+      { icon: 'livewire', name: 'Livewire' },
+      { icon: 'mysql', name: 'MySQL' },
+      { icon: 'sendgrid', name: 'Sendgrid' },
+      { icon: 'deployer', name: 'Deployer' },
+    ],
+  },
+  {
+    name: 'webshop: verhuur',
+    description: 'Tool voor verhuuraanvragen met ERP-integratie (Insphire)',
+    projectIcon: {
+      name: 'bi bi-box',
+      color: 'red',
+    },
+    technologies: [
+      { icon: 'php', name: 'PHP' },
       { icon: 'laravel', name: 'Laravel' },
       { icon: 'mysql', name: 'MySQL' },
+      { icon: 'sendgrid', name: 'Sendgrid' },
     ],
   },
 ];

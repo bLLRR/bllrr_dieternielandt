@@ -17,6 +17,8 @@ export default function TechIcon({
     'stripe',
     'sendgrid',
     'apexcharts',
+    'deployer',
+    'blade',
   ];
 
   if (unsupportedIcons.includes(icon)) {
