@@ -1,26 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import TechIcon from './components/ui/TechIcon';
+
 import clsx from 'clsx';
+
+import TechIcon from './components/ui/TechIcon';
 import techStack from '@/data/tech-stack.json';
-import projects from '@/data/projects.json';
-
-interface Project {
-  name: string;
-  description: string;
-  projectIcon?: ProjectIcon;
-  technologies?: Technology[];
-}
-
-interface ProjectIcon {
-  name: string;
-  color?: string;
-}
-
-interface Technology {
-  icon: string;
-  name?: string;
-}
+import { projects, type Project, type Technology } from '@/data/projects';
 
 interface ProjectProps {
   project: Project;
@@ -50,7 +35,7 @@ export function TechPill({
   width = 15,
 }: TechPillProps) {
   return (
-    <span className="flex gap-2 rounded-2xl border border-gray-200 bg-gray-100 px-2 py-1 text-sm">
+    <span className="flex gap-2 rounded-2xl border border-gray-200 bg-gray-100 px-2 py-1 text-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300">
       <TechIcon icon={technology.icon} height={height} width={width} />
       {technology.name}
     </span>
@@ -59,7 +44,7 @@ export function TechPill({
 
 export function Card({ project }: ProjectProps) {
   return (
-    <div className="rounded-lg border border-gray-300 p-2">
+    <div className="rounded-lg border border-gray-300 p-2 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300">
       <h3 className="text-lg">
         <span className="">
           {project.projectIcon && (
@@ -75,8 +60,8 @@ export function Card({ project }: ProjectProps) {
           {project.name}
         </span>
       </h3>
-      <p className="text-gray-600">{project.description}</p>
-      <div className="flex flex-wrap items-center gap-1">
+      <p className="text-gray-600 dark:text-gray-400">{project.description}</p>
+      <div className="mt-2 flex flex-wrap items-center gap-1">
         {project.technologies?.map((technology, index) => (
           <TechPill key={index} technology={technology} />
         ))}
@@ -87,21 +72,34 @@ export function Card({ project }: ProjectProps) {
 
 export default function Home() {
   return (
-    <div className="dark:bg-gray-900">
+    <div className="">
       <nav className="px-4 py-2.5">
         <div className="flex items-center justify-start">
           <Link href="/" className="mr-4 flex items-center justify-between">
-            <Image alt={'logo'} src={'/logo.png'} width={65} height={55} />
+            <Image
+              alt={'logo'}
+              src={'/logo.png'}
+              width={65}
+              height={55}
+              className="dark:hidden"
+            />
+            <Image
+              alt={'logo'}
+              src={'/logo_dark.png'}
+              width={65}
+              height={55}
+              className="hidden dark:block"
+            />
           </Link>
         </div>
       </nav>
 
       <main className="mx-auto h-auto max-w-5xl p-4">
         {/* About */}
-        <h3 className="text-2xl">
+        <h3 className="text-2xl dark:text-gray-200">
           Hey, Ik ben <span className="text-amber-600">Dieter Nielandt</span>
         </h3>
-        <div className="py-2">
+        <div className="py-2 dark:text-gray-300">
           <p>
             Gedreven Full Stack Developer met een brede technische achtergrond
             en een passie voor het bouwen van performante, gebruiksvriendelijke
@@ -114,9 +112,11 @@ export default function Home() {
           </p>
         </div>
         {/* Tech stack */}
-        <h3 className="text-2xl text-gray-500">Tech Stack</h3>
+        <h3 className="text-2xl text-gray-500 dark:text-gray-300">
+          Tech Stack
+        </h3>
         <div className="flex flex-wrap gap-1 py-4">{renderTechStack()}</div>
-        <h3 className="text-2xl text-gray-500">Projecten</h3>
+        <h3 className="text-2xl text-gray-500 dark:text-gray-300">Projecten</h3>
         {/* Projects */}
         <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 lg:grid-cols-3">
           {renderProjects()}
