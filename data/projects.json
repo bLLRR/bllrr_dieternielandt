@@ -13,7 +13,7 @@
   },
   {
     "name": "Fleet management",
-    "description": "Platform voor wagenparkbeheer met modules, automasche herinneringen en integraies",
+    "description": "Platform voor wagenparkbeheer met modules, automatische herinneringen en integraties",
     "projectIcon": {
       "name": "bi bi-box"
     },
@@ -48,7 +48,7 @@
   },
   {
     "name": "ERP API-Gateway/mapper",
-    "description": "Servicemappinglaag voor API-communicaie",
+    "description": "Servicemappinglaag voor API-communicatie",
     "projectIcon": {
       "name": "bi bi-box"
     },
