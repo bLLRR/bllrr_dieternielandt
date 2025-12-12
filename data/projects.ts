@@ -11,6 +11,7 @@ export const projects: Project[] = [
       { icon: 'nextjs2', name: 'NextJS' },
       { icon: 'tailwindcss', name: 'Tailwindcss' },
       { icon: 'typescript', name: 'Typescript' },
+      { icon: 'vercel', name: 'Vercel' },
     ],
     link: 'https://github.com/bLLRR/bllrr_dieternielandt',
   },
