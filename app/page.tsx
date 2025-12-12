@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Navbar from './components/layout/navbar';
 
 import { Project } from '@/types/Project';
 import { Technology } from '@/types/Technology';
@@ -76,26 +75,7 @@ export function Card({ project }: ProjectProps) {
 export default function Home() {
   return (
     <div className="">
-      <nav className="px-4 py-2.5">
-        <div className="flex items-center justify-start">
-          <Link href="/" className="mr-4 flex items-center justify-between">
-            <Image
-              alt={'logo'}
-              src={'/logo.png'}
-              width={65}
-              height={55}
-              className="dark:hidden"
-            />
-            <Image
-              alt={'logo'}
-              src={'/logo_dark.png'}
-              width={65}
-              height={55}
-              className="hidden dark:block"
-            />
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
 
       <main className="mx-auto h-auto max-w-5xl p-4">
         {/* About */}
