@@ -3,7 +3,7 @@ import { Project } from '@/types/Project';
 export const projects: Project[] = [
   {
     name: 'dieternielandt.be',
-    description: 'porfolio website',
+    description: 'Porfolio website',
     projectIcon: {
       name: 'bi bi-browser-chrome',
     },
