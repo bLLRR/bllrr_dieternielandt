@@ -1,9 +1,9 @@
-import StackIcon from 'tech-stack-icons'
+import StackIcon from 'tech-stack-icons';
 
 interface StackIconProps {
-  icon: string
-  width?: number
-  height?: number
+  icon: string;
+  width?: number;
+  height?: number;
 }
 
 export default function TechIcon({
@@ -11,9 +11,21 @@ export default function TechIcon({
   width = 40,
   height = 40,
 }: StackIconProps) {
+  const unsupportedIcons = [
+    'livewire',
+    'ploiio',
+    'stripe',
+    'sendgrid',
+    'apexcharts',
+  ];
+
+  if (unsupportedIcons.includes(icon)) {
+    return null;
+  }
+
   return (
     <div style={{ width: width, height: height }}>
       <StackIcon name={icon} />
     </div>
-  )
+  );
 }
