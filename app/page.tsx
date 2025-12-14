@@ -10,7 +10,7 @@ import Link from './components/ui/Link';
 
 function renderTechStack() {
   return techStack.map((technology: Technology, index) => (
-    <TechPill key={index} technology={technology} />
+    <TechPill key={index} icon={technology.icon} text={technology.name} />
   ));
 }
 

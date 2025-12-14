@@ -21,6 +21,10 @@ export default function TechIcon({
     'blade',
   ];
 
+  if (icon === '') {
+    return null;
+  }
+
   if (unsupportedIcons.includes(icon)) {
     return null;
   }

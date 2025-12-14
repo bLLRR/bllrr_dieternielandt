@@ -1,7 +1,10 @@
+import { Url } from 'url';
 import { Technology } from './Technology';
 
 export interface Project {
+  id: number;
   name: string;
+  tagline: string;
   description: string;
   projectIcon?: {
     name: string;
@@ -9,4 +12,5 @@ export interface Project {
   };
   technologies?: Technology[];
   link?: string;
+  repository?: string;
 }
