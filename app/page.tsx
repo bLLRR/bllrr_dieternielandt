@@ -43,7 +43,7 @@ export default function Home() {
         <Link
           icon="bi bi-envelope"
           href="mailto:dieter.nielandt@gmail.com"
-          className="mb-2"
+          className="mb-2 dark:text-gray-300"
         >
           Mail mij
         </Link>
