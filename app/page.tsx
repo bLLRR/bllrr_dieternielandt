@@ -22,39 +22,48 @@ function renderProjects() {
 
 export default function Home() {
   return (
-    <div>
+    <div className="space-y-6">
       {/* About */}
-      <h3 className="text-2xl dark:text-gray-200">
-        Hey, Ik ben <span className="text-amber-600">Dieter Nielandt</span>
-      </h3>
-      <div className="mb-2 py-2 dark:text-gray-300">
-        <p>
-          Gedreven Full Stack Developer met een brede technische achtergrond en
-          een passie voor het bouwen van performante, gebruiksvriendelijke
-          webapplicaties. Ervaren met Laravel, Node.js, React, Livewire,
-          PostgreSQL en MySQL, en vertrouwd met API-integraties en mobiele
-          toepassingen. Naast de code hecht ik veel waarde aan duidelijke
-          communicatie, teamwork en een gezonde dosis humor op de werkvloer. Ik
-          haal energie uit het blijven bijleren en het opleveren van iets waar
-          gebruikers écht blij van worden.
-        </p>
+      <div className="">
+        <h3 className="text-2xl dark:text-gray-200">
+          Hey, Ik ben <span className="text-amber-600">Dieter Nielandt</span>
+        </h3>
+        <div className="mb-2 py-2 dark:text-gray-300">
+          <p>
+            Gedreven Full Stack Developer met een brede technische achtergrond
+            en een passie voor het bouwen van performante, gebruiksvriendelijke
+            webapplicaties. Ervaren met Laravel, Node.js, React, Livewire,
+            PostgreSQL en MySQL, en vertrouwd met API-integraties en mobiele
+            toepassingen. Naast de code hecht ik veel waarde aan duidelijke
+            communicatie, teamwork en een gezonde dosis humor op de werkvloer.
+            Ik haal energie uit het blijven bijleren en het opleveren van iets
+            waar gebruikers écht blij van worden.
+          </p>
+        </div>
+        <Link
+          icon="bi bi-envelope"
+          href="mailto:dieter.nielandt@gmail.com"
+          className="mb-2"
+        >
+          Mail mij
+        </Link>
       </div>
-      <Link
-        icon="bi bi-envelope"
-        href="mailto:dieter.nielandt@gmail.com"
-        className="mb-2"
-      >
-        Mail mij
-      </Link>
+
       {/* Tech stack */}
-      <h3 className="mt-2 text-2xl text-gray-500 dark:text-gray-300">
-        Tech Stack
-      </h3>
-      <div className="mb-2 flex flex-wrap gap-1 py-4">{renderTechStack()}</div>
-      <h3 className="text-2xl text-gray-500 dark:text-gray-300">Projecten</h3>
-      {/* Projects */}
-      <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 lg:grid-cols-3">
-        {renderProjects()}
+      <div className="">
+        <h3 className="mt-2 text-2xl text-gray-500 dark:text-gray-300">
+          Tech Stack
+        </h3>
+        <div className="mb-2 flex flex-wrap gap-1 py-4">
+          {renderTechStack()}
+        </div>
+      </div>
+      <div className="">
+        <h3 className="text-2xl text-gray-500 dark:text-gray-300">Projecten</h3>
+        {/* Projects */}
+        <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 lg:grid-cols-3">
+          {renderProjects()}
+        </div>
       </div>
     </div>
   );
