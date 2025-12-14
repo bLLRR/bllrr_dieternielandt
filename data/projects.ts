@@ -4,9 +4,10 @@ export const projects: Project[] = [
   {
     id: 1,
     name: 'dieternielandt.be',
+    type: 'private',
     tagline: 'Portfolio website',
     description:
-      'Dit is een persoonlijke portfolio van Dieter Nielandt, gebouwd met Next.js en TypeScript. De homepagina introduceert de developer, biedt een mail-link, laat de tech stack zien via kleine pills en toont een grid met projecten. Er is ook een projectoverzichtspagina met kaarten die iconen, namen, korte beschrijvingen en gebruikte technologieën tonen. Elke kaart linkt door naar een detailpagina waar de naam van het gekozen project verschijnt; bij een onbekende ID kom je op een 404. Alle data komt uit één bronbestand (data/projects.ts) met id, naam, beschrijving, icon-info, technologieën en optioneel een link.',
+      'Dit is een persoonlijke portfolio, gebouwd met Next.js en TypeScript. De homepagina is een introductie.',
     projectIcon: {
       name: 'bi bi-browser-chrome',
     },
@@ -22,6 +23,7 @@ export const projects: Project[] = [
   {
     id: 2,
     tagline: 'Fleet management',
+    type: 'work',
     name: 'Fleet management',
     description:
       'Platform voor wagenparkbeheer met modules, automatische herinneringen en integraties',
@@ -40,6 +42,7 @@ export const projects: Project[] = [
   {
     id: 3,
     name: 'CRM/ERP',
+    type: 'work',
     tagline: 'CRM/ERP projectmanagemnt',
     description: 'CRM/ERP projectmanagement',
     projectIcon: {
@@ -62,6 +65,7 @@ export const projects: Project[] = [
   {
     id: 4,
     name: 'ERP API-Gateway',
+    type: 'work',
     tagline: 'Servicemappinglaag voor API-communicatie',
     description: 'Servicemappinglaag voor API-communicatie',
     projectIcon: {
@@ -76,6 +80,7 @@ export const projects: Project[] = [
   {
     id: 5,
     name: 'ERP Mobile',
+    type: 'work',
     tagline: 'Mobiele app voor inventaris, leveringen en tijdsregistratie',
     description:
       'App voor inventaris, orderpicking, leveringen en tijdsregistratie',
@@ -92,6 +97,7 @@ export const projects: Project[] = [
   {
     id: 6,
     name: 'c-supply.be',
+    type: 'work',
     tagline: 'webshop gekoppeld aan ERP',
     description: 'webshop gekoppeld met ERP (fg-software/Optedo)',
     projectIcon: {
@@ -109,6 +115,7 @@ export const projects: Project[] = [
   {
     id: 7,
     name: 'Fleet bestelapplicatie',
+    type: 'work',
     tagline: 'app voor interne bestellingen bestelwagens',
     description:
       'Bestellen van bestelwagens door verschillende afdelingen binnen de groep. Verwerking door fleetmanager via tool en mail.',
@@ -128,6 +135,7 @@ export const projects: Project[] = [
   {
     id: 8,
     name: 'Interne webshop',
+    type: 'work',
     tagline: 'Interne webshop voor werfbestellingen',
     description:
       'Tool voor werfbestellingen met ERP-integratie (FG-Software/Optedo)',
@@ -146,6 +154,7 @@ export const projects: Project[] = [
   {
     id: 9,
     name: 'webshop: verhuur',
+    type: 'work',
     tagline: 'webshop voor verhuuraanvragen',
     description: 'Tool voor verhuuraanvragen met ERP-integratie (Insphire)',
     projectIcon: {
