@@ -32,9 +32,14 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </h3>
       <div className="mb-2 flex flex-wrap gap-1 py-4">{renderTechStack()}</div>
       <h3 className="mt-2 text-2xl text-gray-500 dark:text-gray-300">Code</h3>
-      <div className="mb-2 flex-wrap gap-1 py-4">
+      <div className="mb-2 flex flex-wrap gap-1 py-4">
+        {project.link && (
+          <Link href={project.link}>
+            <TechPill icon="chrome" text="website" />
+          </Link>
+        )}
         {project.repository && (
-          <Link href={project?.repository ?? ''}>
+          <Link href={project.repository}>
             <TechPill icon="github" text="Github" />
           </Link>
         )}
