@@ -12,7 +12,9 @@ export default function ProjectPage() {
   }
   return (
     <div>
-      <h3 className="text-2xl text-gray-500 dark:text-gray-300">Tech Stack</h3>
+      <h3 className="text-2xl text-slate-500 dark:text-slate-400">
+        Tech Stack
+      </h3>
       <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 lg:grid-cols-3">
         {renderProjects()}
       </div>

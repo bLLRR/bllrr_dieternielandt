@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-white font-sans antialiased dark:bg-gray-900">
+      <body className="font-caveat bg-white text-slate-600 antialiased dark:bg-gray-900 dark:text-slate-400">
         <DynamicFavicon />
         <Navbar />
         <main className="mx-auto h-auto max-w-5xl p-4">{children}</main>
