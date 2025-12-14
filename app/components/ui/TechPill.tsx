@@ -17,7 +17,7 @@ export default function TechPill({
   return (
     <Pill className="flex items-center">
       <TechIcon icon={icon} height={height} width={width} />
-      {text}
+      <span className="text-xs">{text}</span>
     </Pill>
   );
 }
