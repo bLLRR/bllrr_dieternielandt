@@ -1,5 +1,3 @@
-import { Technology } from '@/types/Technology';
-
 import TechIcon from './TechIcon';
 import Pill from './Pill';
 
