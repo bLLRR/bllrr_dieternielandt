@@ -1,4 +1,3 @@
-import { Url } from 'url';
 import { Technology } from './Technology';
 
 export interface Project {
