@@ -19,6 +19,8 @@ export default function TechIcon({
     'apexcharts',
     'deployer',
     'blade',
+    'digitalocean',
+    'ploiio',
   ];
 
   if (icon === '') {

@@ -3,9 +3,8 @@ import { Technology } from '@/types/Technology';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-import { projects } from '@/data/projects';
-
 import TechPill from '../../components/ui/TechPill';
+import ProjectRepository from '@/lib/ProjectRepository';
 
 type ProjectPageProps = {
   params: Promise<{ id: string }>;
@@ -13,7 +12,9 @@ type ProjectPageProps = {
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { id } = await params;
-  const project = projects.find((p) => p.id === Number(id));
+  const project = ProjectRepository.findById(Number(id));
+
+  console.log('project: ', project);
 
   if (!project) return notFound();
 
@@ -31,15 +32,20 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         Tech Stack
       </h3>
       <div className="mb-2 flex flex-wrap gap-1 py-4">{renderTechStack()}</div>
-      <h3 className="mt-2 text-2xl text-gray-500 dark:text-gray-300">Code</h3>
+      {project.link ||
+        (project.repository && (
+          <h3 className="mt-2 text-2xl text-gray-500 dark:text-gray-300">
+            Code
+          </h3>
+        ))}
       <div className="mb-2 flex flex-wrap gap-1 py-4">
         {project.link && (
-          <Link href={project.link}>
+          <Link href={project.link} target="_blank">
             <TechPill icon="chrome" text="website" />
           </Link>
         )}
         {project.repository && (
-          <Link href={project.repository}>
+          <Link href={project.repository} target="_blank">
             <TechPill icon="github" text="Github" />
           </Link>
         )}

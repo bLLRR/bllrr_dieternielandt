@@ -1,8 +1,8 @@
 import { Project } from '@/types/Project';
 import { Technology } from '@/types/Technology';
 
-import { techStack } from '@/data/tech-stack';
-import { projects } from '@/data/projects';
+import techStack from '@/data/tech-stack.json';
+import projects from '@/data/projects.json';
 
 import ProjectCard from './components/project/ProjectCard';
 import TechPill from './components/ui/TechPill';
@@ -15,8 +15,8 @@ function renderTechStack() {
 }
 
 function renderProjects() {
-  return projects.map((project: Project, index) => (
-    <ProjectCard key={index} project={project} />
+  return projects.map((project, index) => (
+    <ProjectCard key={index} project={project as Project} />
   ));
 }
 

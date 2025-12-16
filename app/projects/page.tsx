@@ -1,13 +1,12 @@
 import { Project } from '@/types/Project';
-
-import { projects } from '@/data/projects';
+import projects from '@/data/projects.json';
 
 import ProjectCard from '../components/project/ProjectCard';
 
-export default function ProjectPage() {
+export default async function ProjectPage() {
   function renderProjects() {
-    return projects.map((project: Project, index) => (
-      <ProjectCard key={index} project={project} />
+    return projects.map((project, index) => (
+      <ProjectCard key={index} project={project as Project} />
     ));
   }
   return (
