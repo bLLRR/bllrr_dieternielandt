@@ -2,7 +2,7 @@ interface ItemProps {
   time: string;
   title: string;
   subtitle?: string;
-  text: string;
+  text: string | React.ReactNode;
 }
 
 function Item({ time, title, subtitle, text }: ItemProps) {
@@ -10,11 +10,11 @@ function Item({ time, title, subtitle, text }: ItemProps) {
     <li className="ms-4 mb-10">
       <div className="border-buffer absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border bg-slate-300"></div>
       <time className="text-body text-sm leading-none font-normal">{time}</time>
-      <h3 className="text-heading my-2 text-lg font-semibold">{title}</h3>
+      <h2 className="text-heading my-2 text-xl font-semibold">{title}</h2>
       {subtitle && (
         <h5 className="text-heading text-md my-1 font-medium">{subtitle}</h5>
       )}
-      <p className="text-body mb-4 text-base font-normal">{text}</p>
+      <div className="text-body mb-4 text-base font-normal">{text}</div>
     </li>
   );
 }

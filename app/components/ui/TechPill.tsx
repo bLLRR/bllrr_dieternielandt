@@ -1,7 +1,9 @@
 import TechIcon from './TechIcon';
 import Pill from './Pill';
+import { clsx } from 'clsx';
 
 interface TechPillProps {
+  className?: string;
   icon?: string;
   text: string | undefined;
   width?: number;
@@ -9,15 +11,16 @@ interface TechPillProps {
 }
 
 export default function TechPill({
+  className = '',
   icon = '',
   text,
-  height = 15,
-  width = 15,
+  height = 20,
+  width = 20,
 }: TechPillProps) {
   return (
-    <Pill className="flex items-center">
+    <Pill className={clsx(className, `flex items-center align-baseline`)}>
       <TechIcon icon={icon} height={height} width={width} />
-      <span className="text-xs">{text}</span>
+      <span className="text-sm">{text}</span>
     </Pill>
   );
 }
