@@ -40,13 +40,6 @@ export default function Home() {
             waar gebruikers écht blij van worden.
           </p>
         </div>
-        <Link
-          icon="bi bi-envelope"
-          href="mailto:dieter.nielandt@gmail.com"
-          className="mb-2 dark:text-gray-300"
-        >
-          Mail mij
-        </Link>
       </div>
 
       {/* Tech stack */}
@@ -61,6 +54,31 @@ export default function Home() {
         {/* Projects */}
         <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 lg:grid-cols-3">
           {renderProjects()}
+        </div>
+      </div>
+      <div className="">
+        <h3 className="text-2xl">Contact</h3>
+        <p className="mb-2 py-2">
+          Interesse om samen te werken of gewoon hallo zeggen? Stuur me een
+          berichtje!
+        </p>
+        <div className="space-x-4">
+          <Link
+            icon="bi bi-envelope"
+            href="mailto:dieter.nielandt@gmail.com"
+            className="mb-2 dark:text-gray-300"
+            target="_blank"
+          >
+            Mail mij
+          </Link>
+          <Link
+            href="https://linkedin.com/in/dieter-nielandt-a41a7293"
+            icon="bi bi-linkedin text-blue-700"
+            className=""
+            target="_blank"
+          >
+            LinkedIn
+          </Link>
         </div>
       </div>
     </div>
