@@ -58,10 +58,7 @@ export default function Home() {
       </div>
       <div className="">
         <h3 className="text-2xl">Contact</h3>
-        <p className="mb-2 py-2">
-          Interesse om samen te werken of gewoon hallo zeggen? Stuur me een
-          berichtje!
-        </p>
+        <p className="mb-2 py-2">Je kan me bereiken via mail of LinkedIn.</p>
         <div className="space-x-4">
           <Link
             icon="bi bi-envelope"
