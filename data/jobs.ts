@@ -5,6 +5,7 @@ export const jobs: Job[] = [
     id: 1,
     title: 'Full stack developer',
     company: 'FG-Software',
+    text: 'Platform voor wagenparkbeheer met modules, automatische herinneringen en integraties.',
     time: 'Januari 2021 - Juli 2025',
     projectIds: [2, 3, 4, 5],
   },

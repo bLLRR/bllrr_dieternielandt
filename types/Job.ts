@@ -5,6 +5,6 @@ export interface Job {
   title: string;
   company: string;
   time: string;
-  text?: string;
+  text?: string | null;
   projectIds?: Project['id'][];
 }

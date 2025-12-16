@@ -1,14 +1,16 @@
-import { Job } from '@/types/Job';
+import prisma from '@/lib/prisma';
 import Timeline from '../components/ui/Timeline';
 import JobRepository from '@/lib/JobRepository';
 
 export default async function ResumePage() {
-  const jobsWithProjects = await JobRepository.allWithProjects();
-
-  console.log('jobs: ', jobsWithProjects);
+  const jobs = await prisma.job.findMany({
+    include: {
+      projects: true,
+    },
+  });
 
   function renderJobs() {
-    return jobsWithProjects.map((job, index) => (
+    return jobs.map((job, index) => (
       <Timeline.Item
         key={index}
         title={job.title}
