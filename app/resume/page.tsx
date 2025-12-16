@@ -74,10 +74,23 @@ export default async function ResumePage() {
   }
   return (
     <div className="grid grid-cols-3">
-      <div className="col-span-1 space-y-6">
+      <div className="col-span-3 mb-6">
+        <h1 className="text-4xl font-bold">Dieter Nielandt</h1>
+        <p className="mt-4 text-lg">
+          Gedreven Full Stack Developer met een brede technische achtergrond en
+          een passie voor het bouwen van performante, gebruiksvriendelijke
+          webapplicaties. <br />
+          Ervaren met Laravel, Node.js, React, Livewire, PostgreSQL en MySQL, en
+          vertrouwd met API-integraties en mobiele toepassingen. <br /> Naast de
+          code hecht ik veel waarde aan duidelijke communicatie, teamwork en een
+          gezonde dosis humor op de werkvloer. Ik haal energie uit het blijven
+          bijleren en het opleveren van iets waar gebruikers écht blij van
+          worden.
+        </p>
+      </div>
+      <div className="col-span-3 space-y-6 md:col-span-1">
         {/* Image */}
         <div className="">
-          <h1 className="">Dieter Nielandt</h1>
           <Image
             src="/image_cv.jpg"
             alt="Dieter Nielandt"
@@ -132,10 +145,10 @@ export default async function ResumePage() {
         {/* Vaardigheden */}
         <div className="space-y-2">
           <h3 className="">Vaardigheden</h3>
-          <div className="mt-auto flex flex-col gap-2">{renderSkills()}</div>
+          <div className="mt-auto flex flex-wrap gap-2">{renderSkills()}</div>
         </div>
       </div>
-      <div className="col-span-2 space-y-6">
+      <div className="col-span-3 space-y-6 md:col-span-2">
         <h3 className="">Werkervaring</h3>
         <Timeline>{renderJobs()}</Timeline>
       </div>
