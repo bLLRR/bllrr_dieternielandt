@@ -6,6 +6,7 @@ interface LinkProps {
   icon?: string;
   children: React.ReactNode;
   className?: string;
+  target?: string;
 }
 
 export default function LinkButton({
@@ -13,6 +14,7 @@ export default function LinkButton({
   icon,
   children,
   className = '',
+  target = '',
 }: LinkProps) {
   return (
     <Link
@@ -21,6 +23,7 @@ export default function LinkButton({
         `items-center rounded-2xl border border-gray-300 px-2.5 py-2 dark:border-gray-700 dark:bg-gray-800`,
         className,
       )}
+      target={target}
     >
       {icon && (
         <span
@@ -28,7 +31,7 @@ export default function LinkButton({
             `mr-1 items-center rounded-sm border border-gray-300 bg-gray-100 px-1 dark:border-none dark:bg-gray-800`,
           )}
         >
-          <i className={`${icon} text-gray-400 dark:text-gray-500`} />
+          <i className={`${icon}`} />
         </span>
       )}
       {children}
