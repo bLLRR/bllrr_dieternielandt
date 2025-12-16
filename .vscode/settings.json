@@ -1,4 +1,5 @@
 {
-    "editor.fontFamily": "Dank Mono",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.fontFamily": "Dank Mono",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prisma.pinToPrisma6": true
 }

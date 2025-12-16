@@ -1,0 +1,43 @@
+// Prisma schema for dieternielandt
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Technology {
+  id     Int     @id @default(autoincrement())
+  name   String?
+  icon   String?
+  level  Int?
+
+  projects Project[]
+}
+
+model Project {
+  id          Int          @id
+  name        String
+  type        String
+  tagline     String
+  description String
+  link        String?
+  repository  String?
+  iconName    String?
+  iconColor   String?
+
+  technologies Technology[]
+  jobs         Job[]
+}
+
+model Job {
+  id        Int     @id
+  title     String
+  company   String
+  time      String
+  text      String?
+
+  projects Project[]
+}

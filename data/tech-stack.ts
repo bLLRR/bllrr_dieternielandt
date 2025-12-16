@@ -1,4 +1,4 @@
-import { Technology } from '@/types/Technology';
+import type { Technology } from '../types/Technology.ts';
 
 export const techStack: Technology[] = [
   { icon: 'php', name: 'PHP', level: 2 },
@@ -32,4 +32,13 @@ export const techStack: Technology[] = [
   { icon: 'homebrew', name: 'Homebrew', level: 2 },
   { icon: 'postman', name: 'Postman', level: 2 },
   { icon: 'vitejs', name: 'ViteJs', level: 2 },
+  { icon: 'vercel', name: 'Vercel', level: 2 },
+  { icon: 'livewire', name: 'Livewire', level: 2 },
+  { icon: 'stripe', name: 'Stripe', level: 2 },
+  { icon: 'prisma', name: 'Prisma', level: 2 },
+  { icon: 'ploi.io', name: 'Ploi.io', level: 2 },
+  { icon: 'sendgrid', name: 'SendGrid', level: 2 },
+  { icon: 'apexcharts', name: 'ApexCharts', level: 2 },
+  { icon: 'android', name: 'Android', level: 2 },
+  { icon: 'deployer', name: 'Deployer', level: 2 },
 ];

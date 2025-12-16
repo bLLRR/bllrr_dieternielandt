@@ -7,9 +7,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:seed": "prisma db seed",
+    "prisma:reset": "prisma migrate reset"
   },
   "dependencies": {
+    "@prisma/client": "^6.19.1",
     "bootstrap-icons": "^1.13.1",
     "clsx": "^2.1.1",
     "next": "16.0.8",
@@ -30,7 +35,10 @@
     "globals": "^16.5.0",
     "prettier": "^3.7.4",
     "prettier-plugin-tailwindcss": "^0.7.2",
+    "prisma": "^6.19.1",
     "tailwindcss": "^4",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5",
     "typescript-eslint": "^8.49.0"
   }

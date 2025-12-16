@@ -6,11 +6,11 @@ import { Project } from '@/types/Project';
 export type JobWithProjects = Job & { projects: Project[] };
 
 export default class JobRepository {
-  static all(): Job[] {
+  static async all(): Promise<Job[]> {
     return jobs;
   }
 
-  static allWithProjects(): JobWithProjects[] {
+  static async allWithProjects(): Promise<JobWithProjects[]> {
     return jobs.map((job) => {
       const projects =
         job.projectIds?.map((id) => ProjectRepository.findById(id)) ?? [];
