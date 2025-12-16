@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="font-caveat bg-white text-slate-600 antialiased dark:bg-gray-900 dark:text-slate-400">
         <DynamicFavicon />
         <Navbar />
-        <main className="mx-auto h-auto max-w-5xl p-4">{children}</main>
+        <main className="mx-auto h-auto max-w-6xl p-4">{children}</main>
       </body>
     </html>
   );
