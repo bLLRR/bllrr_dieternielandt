@@ -19,7 +19,7 @@ export default function Badge({ color, text, className = '' }: BadgeProps) {
   return (
     <span
       className={clsx(
-        'inline-flex items-center rounded-lg border px-1.5 py-0.5 text-xs font-medium ring-inset',
+        'inline-flex items-center rounded-full border px-1.5 py-0.5 text-xs font-medium ring-inset',
         colorClasses,
         className,
       )}
