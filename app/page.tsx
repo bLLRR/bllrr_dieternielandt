@@ -25,9 +25,9 @@ export default function Home() {
     <div className="space-y-6">
       {/* About */}
       <div className="">
-        <h3 className="text-2xl dark:text-gray-200">
+        <h1 className="">
           Hey, Ik ben <span className="text-amber-600">Dieter Nielandt</span>
-        </h3>
+        </h1>
         <div className="mb-2 py-2">
           <p>
             Gedreven Full Stack Developer met een brede technische achtergrond
@@ -51,17 +51,13 @@ export default function Home() {
 
       {/* Tech stack */}
       <div className="">
-        <h3 className="mt-2 text-2xl text-slate-500 dark:text-slate-400">
-          Tech Stack
-        </h3>
-        <div className="mb-2 flex flex-wrap gap-1 py-4">
+        <h3 className="mt-2">Tech Stack</h3>
+        <div className="mb-2 flex flex-wrap gap-2 py-4">
           {renderTechStack()}
         </div>
       </div>
       <div className="">
-        <h3 className="text-2xl text-slate-500 dark:text-slate-400">
-          Projecten
-        </h3>
+        <h3 className="text-2xl">Projecten</h3>
         {/* Projects */}
         <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 lg:grid-cols-3">
           {renderProjects()}
