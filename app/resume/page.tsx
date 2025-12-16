@@ -26,6 +26,15 @@ const skills = [
 export default async function ResumePage() {
   const jobs = await JobRepository.getAllJobs();
 
+  function renderJobTitle(job: Job) {
+    return (
+      <div className="">
+        <span className="text-heading text-xl font-semibold">{job.title}</span>
+        <span className="text-sm font-normal">{` - ${job.company}`}</span>
+      </div>
+    );
+  }
+
   function renderJobText(job: Job) {
     return (
       <div>
@@ -65,7 +74,7 @@ export default async function ResumePage() {
     return jobs.map((job, index) => (
       <Timeline.Item
         key={index}
-        title={job.title}
+        title={renderJobTitle(job)}
         subtitle={job.company}
         time={job.time}
         text={renderJobText(job)}
@@ -75,7 +84,9 @@ export default async function ResumePage() {
   return (
     <div className="grid grid-cols-3">
       <div className="col-span-3 mb-6">
-        <h1 className="text-4xl font-bold">Dieter Nielandt</h1>
+        <h1 className="">
+          <span className="text-amber-600">Dieter Nielandt</span>
+        </h1>
         <p className="mt-4 text-lg">
           Gedreven Full Stack Developer met een brede technische achtergrond en
           een passie voor het bouwen van performante, gebruiksvriendelijke
@@ -90,12 +101,12 @@ export default async function ResumePage() {
       </div>
       <div className="col-span-3 space-y-6 md:col-span-1">
         {/* Image */}
-        <div className="">
+        <div className="flex items-center justify-center md:justify-start">
           <Image
             src="/image_cv.jpg"
             alt="Dieter Nielandt"
-            width={300}
-            height={300}
+            width={325}
+            height={325}
             className="rounded-lg"
           />
         </div>
@@ -103,26 +114,26 @@ export default async function ResumePage() {
         <div className="">
           <h3 className="">Full-Stack Developer</h3>
           <p className="">
-            <i className="bi bi-envelope" />
+            <i className="bi bi-envelope dark:text-slate-400" />
             <a
               href="mailto:dieter.nielandt@gmail.com"
-              className="ml-2 underline hover:text-slate-900 dark:hover:text-slate-100"
+              className="underline-none ml-2 cursor-pointer hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
             >
               dieter.nielandt@gmail.com
             </a>
           </p>
           <p className="">
-            <i className="bi bi-phone" />
+            <i className="bi bi-phone dark:text-slate-400" />
             <a
               href="tel:+32476426387"
-              className="ml-2 underline hover:text-slate-900 dark:hover:text-slate-100"
+              className="underline-none ml-2 cursor-pointer hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
             >
               +32 47 82 48 42
             </a>
           </p>
           <p className="">
-            <i className="bi bi-geo-alt" />
-            <span className="ml-1">Temse, Belgie</span>
+            <i className="bi bi-geo-alt dark:text-slate-400" />
+            <span className="ml-1 dark:text-slate-400">Temse, Belgie</span>
           </p>
         </div>
         {/* Opleidingen */}
@@ -146,6 +157,27 @@ export default async function ResumePage() {
         <div className="space-y-2">
           <h3 className="">Vaardigheden</h3>
           <div className="mt-auto flex flex-wrap gap-2">{renderSkills()}</div>
+        </div>
+        {/* Talen */}
+        <div className="space-y-2">
+          <h3 className="">Talen</h3>
+          <div className="flex flex-col">
+            <span>Nederlands - Moedertaal</span>
+            <span>Engels - Goed</span>
+            <span>Frans - Basiskennis</span>
+          </div>
+        </div>
+        <div className="space-y-2">
+          <h3 className="Hobbies">Hobbies</h3>
+          <div className="flex flex-col">
+            <span className="">
+              <i className="bi bi-bicycle text-2xl" /> Fietsen
+            </span>
+            <span className="">
+              <i className="bi bi-person-walking text-2xl" />
+              Lopen
+            </span>
+          </div>
         </div>
       </div>
       <div className="col-span-3 space-y-6 md:col-span-2">
