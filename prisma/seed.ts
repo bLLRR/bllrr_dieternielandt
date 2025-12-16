@@ -1,8 +1,8 @@
 import { PrismaClient } from '@prisma/client';
 
-import { jobs } from '../data/jobs.ts';
-import { projects } from '../data/projects.ts';
-import { techStack } from '../data/tech-stack.ts';
+import { jobs } from '../data/jobs';
+import { projects } from '../data/projects';
+import { techStack } from '../data/tech-stack';
 
 const prisma = new PrismaClient();
 
