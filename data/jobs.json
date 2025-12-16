@@ -11,5 +11,23 @@
     "title": "Developer",
     "company": "C-Supply",
     "time": "Mei 2019 - December 2020"
+  },
+  {
+    "id": 3,
+    "title": "IT Support - helpdesk",
+    "company": "SoftTouch",
+    "time": "Februari 2016 - April 2019"
+  },
+  {
+    "id": 4,
+    "title": "IT Support",
+    "company": "Phimac",
+    "time": "Januari 2015 - Juli 2015"
+  },
+  {
+    "id": 5,
+    "title": "Allround/operations medewerker",
+    "company": "JPR Indoorkarting",
+    "time": "Juli 2012 - Juni 2018"
   }
 ]
