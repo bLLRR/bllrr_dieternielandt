@@ -3,6 +3,7 @@
     "id": 1,
     "name": "dieternielandt.be",
     "type": "private",
+    "visible": true,
     "tagline": "Portfolio website",
     "description": "Dit is een persoonlijke portfolio, gebouwd met Next.js en TypeScript. De homepagina is een introductie.",
     "projectIcon": {
@@ -21,6 +22,7 @@
     "id": 2,
     "tagline": "Fleet management",
     "type": "work",
+    "visible": true,
     "name": "Fleet management",
     "description": "Platform voor wagenparkbeheer met modules, automatische herinneringen en integraties",
     "projectIcon": {
@@ -40,6 +42,7 @@
     "id": 3,
     "name": "CRM/ERP",
     "type": "work",
+    "visible": true,
     "tagline": "CRM/ERP projectmanagemnt",
     "description": "Nieuw ERP-systeem met CRM- en projectmodules",
     "projectIcon": {
@@ -64,6 +67,7 @@
     "id": 4,
     "name": "ERP API-Gateway",
     "type": "work",
+    "visible": true,
     "tagline": "Servicemappinglaag voor API-communicatie",
     "description": "Servicemappinglaag voor API-communicatie",
     "projectIcon": {
@@ -80,6 +84,7 @@
     "id": 5,
     "name": "ERP Mobile",
     "type": "work",
+    "visible": true,
     "tagline": "Mobiele app voor inventaris, leveringen en tijdsregistratie",
     "description": "App voor inventaris, orderpicking, leveringen en tijdsregistratie",
     "projectIcon": {
@@ -97,6 +102,7 @@
     "id": 6,
     "name": "webshop: c-supply.be",
     "type": "work",
+    "visible": true,
     "tagline": "webshop gekoppeld aan ERP",
     "description": "webshop gekoppeld met ERP (fg-software/Optedo)",
     "projectIcon": {
@@ -116,6 +122,7 @@
     "id": 7,
     "name": "Fleet: bestelapplicatie",
     "type": "work",
+    "visible": true,
     "tagline": "app voor interne bestellingen bestelwagens",
     "description": "Bestellen van bestelwagens door verschillende afdelingen binnen de groep. Verwerking door fleetmanager via tool en mail.",
     "projectIcon": {
@@ -136,6 +143,7 @@
     "id": 8,
     "name": "Intern: webshop",
     "type": "work",
+    "visible": true,
     "tagline": "Interne webshop voor werfbestellingen",
     "description": "Tool voor werfbestellingen met ERP-integratie (FG-Software/Optedo)",
     "projectIcon": {
@@ -155,6 +163,7 @@
     "id": 9,
     "name": "webshop: verhuur",
     "type": "work",
+    "visible": true,
     "tagline": "webshop voor verhuuraanvragen",
     "description": "Tool voor verhuuraanvragen met ERP-integratie (Insphire)",
     "projectIcon": {
@@ -168,5 +177,31 @@
       { "icon": "sendgrid", "name": "Sendgrid" }
     ],
     "jobId": 2
+  },
+  {
+    "id": 10,
+    "name": "EDI",
+    "type": "work",
+    "visible": false,
+    "tagline": "",
+    "description": "Import, support en uitbreiding van EDI-communicatie met verschillende partners",
+    "projectIcon": {
+      "name": "bi bi-box"
+    },
+    "technologies": [],
+    "jobId": 3
+  },
+  {
+    "id": 10,
+    "name": "IT support",
+    "type": "work",
+    "visible": false,
+    "tagline": "",
+    "description": "Hardware/ soTware/ netwerk",
+    "projectIcon": {
+      "name": "bi bi-box"
+    },
+    "technologies": [],
+    "jobId": 3
   }
 ]

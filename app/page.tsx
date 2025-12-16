@@ -15,9 +15,12 @@ function renderTechStack() {
 }
 
 function renderProjects() {
-  return projects.map((project, index) => (
-    <ProjectCard key={index} project={project as Project} />
-  ));
+  return projects.map(
+    (project, index) =>
+      project.visible && (
+        <ProjectCard key={index} project={project as Project} />
+      ),
+  );
 }
 
 export default function Home() {

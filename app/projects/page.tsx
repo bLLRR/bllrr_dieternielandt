@@ -5,9 +5,12 @@ import ProjectCard from '../components/project/ProjectCard';
 
 export default async function ProjectPage() {
   function renderProjects() {
-    return projects.map((project, index) => (
-      <ProjectCard key={index} project={project as Project} />
-    ));
+    return projects.map(
+      (project, index) =>
+        project.visible && (
+          <ProjectCard key={index} project={project as Project} />
+        ),
+    );
   }
   return (
     <div>

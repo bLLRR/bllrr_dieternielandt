@@ -8,6 +8,7 @@ export interface Project {
   id: number;
   name: string;
   type: 'private' | 'work';
+  visible: boolean;
   tagline: string;
   description: string;
   projectIcon?: ProjectIcon;
