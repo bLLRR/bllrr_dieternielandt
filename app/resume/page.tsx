@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import JobRepository from '@/lib/JobRepository';
 
@@ -90,10 +88,10 @@ export default async function ResumePage() {
           <span className="text-amber-600">Curriculum Vitae</span>
         </h1>
       </div>
-      <div className="col-span-3 space-y-6 md:col-span-1">
+      <div className="col-span-3 space-y-6 pr-4 md:col-span-1">
         {/* Image */}
         <div className="flex items-center justify-center md:justify-start">
-          <div className="relative mx-auto h-96 w-96 md:h-72 md:w-72">
+          <div className="relative mx-auto h-96 w-96 md:h-96 md:w-96">
             <Image
               src="/image_cv.jpg"
               alt="Dieter Nielandt"

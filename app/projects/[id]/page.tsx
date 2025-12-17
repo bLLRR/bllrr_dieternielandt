@@ -1,5 +1,3 @@
-'use client';
-
 import { Technology } from '@/types/Technology';
 
 import Link from 'next/link';
