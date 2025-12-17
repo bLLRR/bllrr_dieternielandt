@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
-import { SpeedInsights } from 'next/speed-insights';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import './globals.css';
 
