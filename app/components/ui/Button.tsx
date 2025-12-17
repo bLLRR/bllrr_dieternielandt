@@ -7,7 +7,7 @@ interface ButtonProps {
 export default function Button({ children }: ButtonProps) {
   return (
     <>
-      <button type="button" className={clsx('border border-gray-300')}>
+      <button type="button" className="button">
         {children}
       </button>
     </>
