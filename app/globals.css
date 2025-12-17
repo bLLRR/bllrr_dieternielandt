@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 h1 {
-  @apply text-4xl font-bold text-slate-700 dark:text-slate-200;
+  @apply text-4xl font-bold text-slate-700 dark:text-slate-300;
 }
 
 h2 {
@@ -14,4 +14,8 @@ h3 {
 
 p {
   @apply text-slate-800 dark:text-slate-200;
+}
+
+.card {
+  @apply rounded-lg border border-gray-300 p-5 hover:shadow-md dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300;
 }
