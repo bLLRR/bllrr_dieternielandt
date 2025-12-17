@@ -159,7 +159,7 @@ export default async function ResumePage() {
           </div>
         </div>
         <div className="space-y-2">
-          <h3 className="Hobbies">Hobbies</h3>
+          <h3 className="">Hobby's</h3>
           <div className="flex flex-col">
             <span className="">
               <i className="bi bi-bicycle text-2xl" /> Fietsen
