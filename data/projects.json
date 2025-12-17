@@ -203,5 +203,122 @@
     },
     "technologies": [],
     "jobId": 3
+  },
+  {
+    "id": 12,
+    "name": "Installatie van kassa-en backend-software (on-site)",
+    "type": "work",
+    "visible": false,
+    "tagline": "",
+    "description": "",
+    "projectIcon": {
+      "name": "bi bi-box"
+    },
+    "technologies": [],
+    "jobId": 3
+  },
+  {
+    "id": 13,
+    "name": "Rapportering (mysql)",
+    "type": "work",
+    "visible": false,
+    "tagline": "",
+    "description": "",
+    "projectIcon": {
+      "name": "bi bi-box"
+    },
+    "technologies": [],
+    "jobId": 3
+  },
+  {
+    "id": 14,
+    "name": "Eerste- en tweedelijns IT-support",
+    "type": "work",
+    "visible": false,
+    "tagline": "",
+    "description": "Oplossen van hardware- en softwareproblemen voor eindgebruikers. Telefonisch, remote en on-site ondersteuning bieden.",
+    "projectIcon": {
+      "name": "bi bi-box"
+    },
+    "technologies": [],
+    "jobId": 4
+  },
+  {
+    "id": 15,
+    "name": "On-site interventies",
+    "type": "work",
+    "visible": false,
+    "tagline": "",
+    "description": "Uitvoeren van dringende interventies om downtime te minimaliseren en de operationele continuïteit te waarborgen.",
+    "projectIcon": {
+      "name": "bi bi-box"
+    },
+    "technologies": [],
+    "jobId": 4
+  },
+  {
+    "id": 16,
+    "name": "Installatie en onderhoud van hardware en software",
+    "type": "work",
+    "visible": false,
+    "tagline": "",
+    "description": "Configureren, installeren en onderhouden van IT-apparatuur, netwerken en softwaretoepassingen om een optimale werking te garanderen.",
+    "projectIcon": {
+      "name": "bi bi-box"
+    },
+    "technologies": [],
+    "jobId": 4
+  },
+  {
+    "id": 17,
+    "name": "Communicatie en opvolging",
+    "type": "work",
+    "visible": false,
+    "tagline": "",
+    "description": "Gebruikers ondersteunen en incidenten documenteren en opvolgen.",
+    "projectIcon": {
+      "name": "bi bi-box"
+    },
+    "technologies": [],
+    "jobId": 4
+  },
+  {
+    "id": 18,
+    "name": "Klantenonthaal",
+    "type": "work",
+    "visible": false,
+    "tagline": "",
+    "description": "Ontvangen en inschrijven van klanten bij aankomst, info geven over sessies en veiligheidsregels, en zorgen voor een vlotte doorstroming.",
+    "projectIcon": {
+      "name": "bi bi-box"
+    },
+    "technologies": [],
+    "jobId": 5
+  },
+  {
+    "id": 19,
+    "name": "Planning en organisatie",
+    "type": "work",
+    "visible": false,
+    "tagline": "",
+    "description": "Opstellen en opvolgen van de planning van kartingsessies, efficiënt inplannen van sessies.",
+    "projectIcon": {
+      "name": "bi bi-box"
+    },
+    "technologies": [],
+    "jobId": 5
+  },
+  {
+    "id": 20,
+    "name": "Teamcoördinatie",
+    "type": "work",
+    "visible": false,
+    "tagline": "",
+    "description": "Aansturen en opvolgen van marschallteam en onderhoud tijdens de activiteiten voor een veilig en vlot verloop.",
+    "projectIcon": {
+      "name": "bi bi-box"
+    },
+    "technologies": [],
+    "jobId": 5
   }
 ]
