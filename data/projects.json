@@ -116,6 +116,7 @@
       { "icon": "mysql", "name": "MySQL" },
       { "icon": "sendgrid", "name": "Sendgrid" }
     ],
+    "link": "https://c-supply.be",
     "jobId": 2
   },
   {
