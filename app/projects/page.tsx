@@ -1,3 +1,5 @@
+'use client';
+
 import { Project } from '@/types/Project';
 import projects from '@/data/projects.json';
 

@@ -1,3 +1,5 @@
+'use client';
+
 import { Project } from '@/types/Project';
 import { Technology } from '@/types/Technology';
 
