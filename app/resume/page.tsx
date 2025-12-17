@@ -75,7 +75,7 @@ export default async function ResumePage() {
       <Timeline.Item
         key={index}
         title={renderJobTitle(job)}
-        subtitle={job.company}
+        subtitle={''}
         time={job.time}
         text={renderJobText(job)}
       />
@@ -85,30 +85,21 @@ export default async function ResumePage() {
     <div className="grid grid-cols-3">
       <div className="col-span-3 mb-6">
         <h1 className="">
-          <span className="text-amber-600">Dieter Nielandt</span>
+          <span className="text-amber-600">Curriculum Vitae</span>
         </h1>
-        <p className="mt-4 text-lg">
-          Gedreven Full Stack Developer met een brede technische achtergrond en
-          een passie voor het bouwen van performante, gebruiksvriendelijke
-          webapplicaties. <br />
-          Ervaren met Laravel, Node.js, React, Livewire, PostgreSQL en MySQL, en
-          vertrouwd met API-integraties en mobiele toepassingen. <br /> Naast de
-          code hecht ik veel waarde aan duidelijke communicatie, teamwork en een
-          gezonde dosis humor op de werkvloer. Ik haal energie uit het blijven
-          bijleren en het opleveren van iets waar gebruikers écht blij van
-          worden.
-        </p>
       </div>
       <div className="col-span-3 space-y-6 md:col-span-1">
         {/* Image */}
         <div className="flex items-center justify-center md:justify-start">
-          <Image
-            src="/image_cv.jpg"
-            alt="Dieter Nielandt"
-            width={325}
-            height={325}
-            className="rounded-lg"
-          />
+          <div className="relative mx-auto h-96 w-96 md:h-72 md:w-72">
+            <Image
+              src="/image_cv.jpg"
+              alt="Dieter Nielandt"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
         </div>
         {/* Personalia */}
         <div className="">
@@ -180,7 +171,7 @@ export default async function ResumePage() {
           </div>
         </div>
       </div>
-      <div className="col-span-3 space-y-6 md:col-span-2">
+      <div className="col-span-3 mt-6 space-y-6 sm:mt-0 md:col-span-2">
         <h3 className="">Werkervaring</h3>
         <Timeline>{renderJobs()}</Timeline>
       </div>
