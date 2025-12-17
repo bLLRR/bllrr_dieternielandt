@@ -14,8 +14,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const { id } = await params;
   const project = ProjectRepository.findById(Number(id));
 
-  console.log('project: ', project);
-
   if (!project) return notFound();
 
   function renderTechStack() {
