@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
+import { SpeedInsights } from 'next/speed-insights';
 
 import './globals.css';
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Navbar />
         <main className="mx-auto h-auto max-w-6xl p-4">
           <Suspense fallback={<Loading />}>{children}</Suspense>
+          <SpeedInsights />
         </main>
       </body>
     </html>
