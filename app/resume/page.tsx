@@ -7,6 +7,7 @@ import { Project } from '@/types/Project';
 import TechPill from '../components/ui/TechPill';
 import Timeline from '../components/ui/Timeline';
 import { Technology } from '@/types/Technology';
+import Button from '../components/ui/Button';
 
 const skills = [
   { name: 'JavaScript', icon: 'js' },
@@ -83,10 +84,19 @@ export default async function ResumePage() {
   }
   return (
     <div className="grid grid-cols-3">
-      <div className="col-span-3 mb-6">
+      <div className="col-span-3 mb-6 flex items-center justify-between">
         <h1 className="">
           <span className="text-amber-600">Curriculum Vitae</span>
         </h1>
+        <div>
+          <a
+            href="/documents/dieternielandt_cv_2026.pdf"
+            download="dieternielandt_cv_2026.pdf"
+            rel="noopener noreferrer"
+          >
+            <Button>Download CV</Button>
+          </a>
+        </div>
       </div>
       <div className="col-span-3 space-y-6 pr-4 md:col-span-1">
         {/* Image */}
