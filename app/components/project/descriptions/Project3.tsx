@@ -154,19 +154,6 @@ export default function Project3() {
               <li>Session management met PostgreSQL opslag</li>
             </ul>
           </div>
-
-          {/* 6. Abonnementsbeheer */}
-          <div className="rounded-lg bg-gray-50 p-5 dark:bg-gray-800">
-            <h4 className="mb-3 text-xl font-semibold text-gray-900 dark:text-gray-100">
-              6. Abonnementsbeheer
-            </h4>
-            <ul className="ml-2 list-inside list-disc space-y-1 text-gray-700 dark:text-gray-300">
-              <li>Stripe integratie voor recurring billing</li>
-              <li>Seat-based licentiemodel (full/light users)</li>
-              <li>Webhook handling voor automatische synchronisatie</li>
-              <li>Self-service billing portal</li>
-            </ul>
-          </div>
         </div>
       </section>
 
@@ -184,7 +171,7 @@ export default function Project3() {
               Main ERP
             </h5>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Core applicatie (deze codebase)
+              Core applicatie
             </p>
           </div>
           <div className="rounded-lg bg-gray-50 p-4 dark:bg-gray-800">
@@ -215,111 +202,6 @@ export default function Project3() {
         <p className="mt-3 text-gray-700 italic dark:text-gray-300">
           Communicatie via REST APIs met shared token authenticatie.
         </p>
-      </section>
-
-      {/* Bijzondere Features */}
-      <section>
-        <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">
-          Bijzondere Features
-        </h3>
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-          <div className="flex items-start space-x-2">
-            <span className="mt-1 text-green-500">✓</span>
-            <div>
-              <strong className="text-gray-900 dark:text-gray-100">
-                Real-time updates:
-              </strong>
-              <span className="text-gray-700 dark:text-gray-300">
-                {' '}
-                Socket.IO voor live notificaties
-              </span>
-            </div>
-          </div>
-          <div className="flex items-start space-x-2">
-            <span className="mt-1 text-green-500">✓</span>
-            <div>
-              <strong className="text-gray-900 dark:text-gray-100">
-                File management:
-              </strong>
-              <span className="text-gray-700 dark:text-gray-300">
-                {' '}
-                Drag-and-drop uploads naar Azure Blob Storage
-              </span>
-            </div>
-          </div>
-          <div className="flex items-start space-x-2">
-            <span className="mt-1 text-green-500">✓</span>
-            <div>
-              <strong className="text-gray-900 dark:text-gray-100">
-                Advanced filtering:
-              </strong>
-              <span className="text-gray-700 dark:text-gray-300">
-                {' '}
-                Query builder voor complexe data filtering
-              </span>
-            </div>
-          </div>
-          <div className="flex items-start space-x-2">
-            <span className="mt-1 text-green-500">✓</span>
-            <div>
-              <strong className="text-gray-900 dark:text-gray-100">
-                Responsive design:
-              </strong>
-              <span className="text-gray-700 dark:text-gray-300">
-                {' '}
-                Mobile-first met Tailwind
-              </span>
-            </div>
-          </div>
-          <div className="flex items-start space-x-2">
-            <span className="mt-1 text-green-500">✓</span>
-            <div>
-              <strong className="text-gray-900 dark:text-gray-100">
-                Dark mode:
-              </strong>
-              <span className="text-gray-700 dark:text-gray-300">
-                {' '}
-                Theme switching ondersteuning
-              </span>
-            </div>
-          </div>
-          <div className="flex items-start space-x-2">
-            <span className="mt-1 text-green-500">✓</span>
-            <div>
-              <strong className="text-gray-900 dark:text-gray-100">
-                Localization:
-              </strong>
-              <span className="text-gray-700 dark:text-gray-300">
-                {' '}
-                Multi-language support (EN/NL)
-              </span>
-            </div>
-          </div>
-          <div className="flex items-start space-x-2">
-            <span className="mt-1 text-green-500">✓</span>
-            <div>
-              <strong className="text-gray-900 dark:text-gray-100">
-                Planning view:
-              </strong>
-              <span className="text-gray-700 dark:text-gray-300">
-                {' '}
-                Visual Gantt-achtige project planning
-              </span>
-            </div>
-          </div>
-          <div className="flex items-start space-x-2">
-            <span className="mt-1 text-green-500">✓</span>
-            <div>
-              <strong className="text-gray-900 dark:text-gray-100">
-                Migration lock:
-              </strong>
-              <span className="text-gray-700 dark:text-gray-300">
-                {' '}
-                Database migration safety mechanism
-              </span>
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* Performance & Schaling */}

@@ -65,7 +65,7 @@ export default function Project4() {
           Technische Architectuur
         </h3>
 
-        <div className="grid grid-cols-1 gap-4 space-y-4 md:grid-cols-2">
+        <div className="space-y-4">
           {/* Core Technologies */}
           <div className="rounded-lg border border-purple-200 bg-purple-50 p-5 dark:border-purple-800 dark:bg-purple-900/20">
             <h4 className="mb-3 text-xl font-semibold text-purple-900 dark:text-purple-100">
@@ -98,62 +98,6 @@ export default function Project4() {
               </li>
             </ul>
           </div>
-
-          {/* Architectuur Patronen */}
-          <div className="rounded-lg bg-gray-50 p-5 dark:bg-gray-800">
-            <h4 className="mb-3 text-xl font-semibold text-gray-900 dark:text-gray-100">
-              Architectuur Patronen
-            </h4>
-
-            <div className="space-y-4">
-              <div>
-                <h5 className="mb-2 font-semibold text-gray-900 dark:text-gray-100">
-                  Service Layer Pattern
-                </h5>
-                <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
-                  Gecentraliseerde service routing
-                </p>
-                <pre className="overflow-x-auto rounded bg-gray-900 p-3 text-xs text-gray-100">
-                  {`const getService = (integrationTypeId) => {
-  switch (integrationTypeId) {
-    case trendstopTypeId: return trendstopService;
-    case companywebTypeId: return companywebService;
-  }
-};`}
-                </pre>
-              </div>
-
-              <div>
-                <h5 className="mb-2 font-semibold text-gray-900 dark:text-gray-100">
-                  DTO Mapping Layer
-                </h5>
-                <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
-                  Uniform data transformatie van verschillende externe bronnen
-                </p>
-                <pre className="overflow-x-auto rounded bg-gray-900 p-3 text-xs text-gray-100">
-                  {`mapToCompanyDtoFromTrendstop(externalData)
-mapToCompanyDtoFromCompanyWeb(externalData)`}
-                </pre>
-              </div>
-
-              <div>
-                <h5 className="mb-2 font-semibold text-gray-900 dark:text-gray-100">
-                  Connector Pattern
-                </h5>
-                <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
-                  Base connector met gedeelde axios configuratie
-                </p>
-                <pre className="overflow-x-auto rounded bg-gray-900 p-3 text-xs text-gray-100">
-                  {`const baseConnector = ({ baseUri, serviceToken }) => {
-  const axios = axios.create({
-    baseURL: baseUri,
-    headers: { Authorization: \`Bearer \${serviceToken}\` }
-  });
-};`}
-                </pre>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -164,19 +108,6 @@ mapToCompanyDtoFromCompanyWeb(externalData)`}
         </h3>
 
         <div className="grid grid-cols-1 space-y-4 md:grid-cols-2 md:gap-4">
-          {/* Security */}
-          <div className="rounded-lg border border-red-200 bg-red-50 p-5 dark:border-red-800 dark:bg-red-900/20">
-            <h4 className="mb-3 flex items-center text-lg font-semibold text-red-900 dark:text-red-100">
-              <span className="mr-2">🔐</span> Security
-            </h4>
-            <ul className="ml-2 list-inside list-disc space-y-1 text-gray-700 dark:text-gray-300">
-              <li>Azure Key Vault integratie via @azure/identity</li>
-              <li>HMAC token hashing</li>
-              <li>Environment-based secret management</li>
-              <li>CORS whitelist configuratie</li>
-            </ul>
-          </div>
-
           {/* Integratiebeheer */}
           <div className="rounded-lg border border-orange-200 bg-orange-50 p-5 dark:border-orange-800 dark:bg-orange-900/20">
             <h4 className="mb-3 flex items-center text-lg font-semibold text-orange-900 dark:text-orange-100">
