@@ -46,6 +46,7 @@
     "visible": true,
     "tagline": "CRM/ERP projectmanagemnt",
     "description": "Nieuw ERP-systeem met CRM- en projectmodules",
+    "descriptionComponent": "Project3",
     "projectIcon": {
       "name": "bi bi-box"
     },
@@ -71,6 +72,7 @@
     "visible": true,
     "tagline": "Servicemappinglaag voor API-communicatie",
     "description": "Servicemappinglaag voor API-communicatie",
+    "descriptionComponent": "Project4",
     "projectIcon": {
       "name": "bi bi-box"
     },
