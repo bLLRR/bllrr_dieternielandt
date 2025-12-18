@@ -7,7 +7,7 @@ export default function Project2() {
           Overzicht
         </h3>
         <p className="leading-relaxed text-gray-700 dark:text-gray-300">
-          Dit is een enterprise fleet management systeem gebouwd met Laravel en
+          Een enterprise fleet management systeem gebouwd met Laravel en
           Livewire, specifiek ontwikkeld voor een Belgisch bouwbedrijf. Het
           systeem beheert een complete wagenpark-operatie inclusief voertuigen,
           bestuurders, leasing, schades, brandstof, en elektrisch laden.
