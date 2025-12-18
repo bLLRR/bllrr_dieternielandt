@@ -14,7 +14,7 @@ export default async function ProjectPage() {
   }
   return (
     <div>
-      <h3 className="text-2xl text-slate-500 dark:text-slate-400">Projecten</h3>
+      <h2 className="text-2xl text-slate-500 dark:text-slate-400">Projecten</h2>
       <div className="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 lg:grid-cols-3">
         {renderProjects()}
       </div>
