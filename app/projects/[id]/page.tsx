@@ -1,5 +1,6 @@
 import { Technology } from '@/types/Technology';
 
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
@@ -22,10 +23,21 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     ));
   }
 
+  const DescriptionComponent = project?.descriptionComponent
+    ? dynamic(
+        () =>
+          import(
+            `../../components/project/descriptions/${project.descriptionComponent}`
+          ),
+      )
+    : null;
+
   return (
     <div className="">
-      <h3 className="text-2xl dark:text-gray-200">{project.name}</h3>
-      <div className="mb-2 py-2 dark:text-gray-300">{project.description}</div>
+      <h2 className="text-2xl dark:text-gray-200">{project.name}</h2>
+      <div className="mb-2 py-2 dark:text-gray-300">
+        {DescriptionComponent ? <DescriptionComponent /> : project.description}
+      </div>
       <h3 className="mt-2 text-2xl text-gray-500 dark:text-gray-300">
         Tech Stack
       </h3>

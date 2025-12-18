@@ -11,6 +11,7 @@ export interface Project {
   visible: boolean;
   tagline: string;
   description: string;
+  descriptionComponent?: string;
   projectIcon?: ProjectIcon;
   technologies?: Technology[];
   link?: string;

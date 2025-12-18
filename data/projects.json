@@ -25,6 +25,7 @@
     "visible": true,
     "name": "Fleet management",
     "description": "Platform voor wagenparkbeheer met modules, automatische herinneringen en integraties",
+    "descriptionComponent": "Project2",
     "projectIcon": {
       "name": "bi bi-box"
     },
